@@ -1,0 +1,7 @@
+FROM ubuntu:trusty
+MAINTAINER Romin Irani (email@domain.com)
+copy sources.list /etc/apt/sources.list
+RUN apt-get update
+RUN apt-get install -y nano
+RUN apt-get install -y git
+RUN apt-get install -y apache2
